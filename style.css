@@ -79,11 +79,11 @@ section {
   padding: 80px 0;
 }
 
-li a {
+ul.nav-ul li a {
     padding: 11px 10px 10px 10px;
 }
 
-li.active a { 
+ul.nav-ul li.active a { 
     background-color: #868610;
 }
 
