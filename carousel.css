@@ -110,6 +110,11 @@
   /*color: #6b6b70;*/
   color: #fff;
 }
+
+ul.cd-author-info {
+    list-style: none;
+}
+
 @media only screen and (min-width: 768px) {
   .cd-author img {
     width: 50px;
@@ -268,6 +273,7 @@
   width: 90%;
   max-width: 1170px;
   margin: 4em auto;
+  list-style: none;
 }
 .cd-testimonials-all .cd-testimonials-all-wrapper > ul::after {
   clear: both;
