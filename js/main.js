@@ -34,4 +34,9 @@ jQuery(document).ready(function($){
 	$('.cd-testimonials-all-wrapper').children('ul').masonry({
   		itemSelector: '.cd-testimonials-item'
 	});
+
+	//build the grid for the services section on the front page
+	$('.services-wrapper').children('ul').masonry({
+  		itemSelector: '.services-item'
+	});
 });

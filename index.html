@@ -12,6 +12,7 @@
 	<link rel="stylesheet" href="style.css">
 	
 	<script src="js/modernizr.js"></script>
+
 </head>
 <body>
 
@@ -42,9 +43,9 @@
 				<li class="active"><a href="#">Home</a></li>
 				<li><a href="services.html">Services</a></li>
 				<li><a href="moving-tips.html">Moving Tips</a></li>
-				<li><a href="#">Testimonials</a></li>
-				<li><a href="#">About</a></li>
-				<li><a href="#">Contact</a></li>
+				<li><a href="index.html#testimonials-section">Testimonials</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="#contact">Contact</a></li>
 			</ul>
 		</div> <!-- container -->
 	</nav><!-- main-nav -->
@@ -67,47 +68,67 @@
 		
 		</div> <!-- container -->
 
-		<div class="container">
-			<div class="service">
-				<div class="icon"><i class="fa fa-truck" aria-hidden="true"></i></div>
-				<p><h3 class="service-h3">Household Deliveries</h3></p>
-				<p>Need something delivered? We've got you covered.</p>
-				<div class="btn"><button>More</button></div>
-			</div>
+		<div class="services-wrapper">
+			<ul>
+				<li class="services-item">
+					<div class="service">
+						<div class="icon"><i class="fa fa-truck" aria-hidden="true"></i></div>
+						<p><h3 class="service-h3">Household Deliveries</h3></p>
+						<p>Need something delivered? We've got you covered.</p>
+						<div class="btn">
+							<a href="house-deliveries.html">
+							<button>More</button>
+							</a>
+						</div>
+					</div>
+				</li>
+				
+				<li class="services-item">
+					<div class="service">
+						<div class="icon"><i class="fa fa-home" aria-hidden="true"></i></div>
+						<p><h3 class="service-h3">House Moving</h3></p>
+						<p>Stress free and at affordable rates, with various options to choose from.</p>
+						<div class="btn">
+							<button>More</button>
+						</div>
+					</div>
+				</li>
+		
+				<li class="services-item">
+					<div class="service">
+						<div class="icon"><i class="fa fa-building" aria-hidden="true"></i></div>
+						<p><h3 class="service-h3">Office Relocation</h3></p>
+						<p>Let our experience make your office move a smooth transition.</p>
+						<div class="btn">
+							<button>More</button>
+						</div>
+					</div>
+				</li>
+				
+				<li class="services-item">
+					<div class="service">
+						<div class="icon"><i class="fa fa-ship" aria-hidden="true"></i></div>
+						<p><h3 class="service-h3">Imports/Customs Clearance</h3></p>
+						<p>Import furniture and other goods, easily and economically.</p>
+						<div class="btn"><button>More</button></div>
+					</div>
+				</li>
 
-			<div class="service">
-				<div class="icon"><i class="fa fa-home" aria-hidden="true"></i></div>
-				<p><h3 class="service-h3">House Moving</h3></p>
-				<p>Stress free and at affordable rates, with various options to choose from.</p>
-				<div class="btn"><button>More</button></div>
-			</div>
-
-			<div class="service">
-				<div class="icon"><i class="fa fa-building" aria-hidden="true"></i></div>
-				<p><h3 class="service-h3">Office Relocation</h3></p>
-				<p>Let our experience make your office move a smooth transition.</p>
-				<div class="btn"><button>More</button></div>
-			</div>
-
-			<div class="service">
-				<div class="icon"><i class="fa fa-ship" aria-hidden="true"></i></div>
-				<p><h3 class="service-h3">Imports/Customs Clearance</h3></p>
-				<p>Import furniture and other goods, easily and economically.</p>
-				<div class="btn"><button>More</button></div>
-			</div>
-
-			<div class="service">
-				<div class="icon"><i class="fa fa-car" aria-hidden="true"></i></div>
-				<p><h3 class="service-h3">Vehicles Purchase/Export</h3></p>
-				<p>We'll get you the vehicle of your choice at a great price, and make the paperwork a breeze.</p>
-				<div class="btn"><button>More</button></div>
-			</div>
-			<span class="clr"></span>
-		</div> <!-- container -->
+				<li class="services-item">
+					<div class="service">
+						<div class="icon"><i class="fa fa-car" aria-hidden="true"></i></div>
+						<p><h3 class="service-h3">Vehicles Purchase/Export</h3></p>
+						<p>We'll get you the vehicle of your choice at a great price, and make the paperwork a breeze.</p>
+						<div class="btn"><button>More</button></div>
+					</div>
+				</li>
+			</ul>	
+			<!-- <span class="clr"></span> -->
+		</div> <!-- services-wrapper -->
 
 	</section> <!-- services-section -->
 
-<section class="testimonials">
+<section id="testimonials-section" class="testimonials">
 
 	<div class="container">
 
@@ -223,7 +244,7 @@
 
 </section>
 
-<section class="contact-section">
+<section id="contact" class="contact-section">
 
 	<h1 class="title">Contact Us Today for a Free Estimate</h1>
 	<div class="container">

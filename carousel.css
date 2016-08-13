@@ -56,6 +56,8 @@
   content: "";
   display: table;
 }
+
+
 .cd-testimonials > li {
   position: absolute;
   opacity: 0;
@@ -402,6 +404,10 @@ ul.cd-author-info {
 
 .cd-testimonials-wrapper, a {
   	text-decoration: none;
+}
+
+.cd-testimonials {
+  margin-left: 0;
 }
 
 .cd-testimonials-item li {

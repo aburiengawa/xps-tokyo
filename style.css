@@ -22,6 +22,15 @@ html, body {
 
 /*reusable*/
 
+a {
+  color: #0D446C;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #297CB9;
+}
+
 ul {
     list-style-image: url(img/checkmark.png);
     list-style-position: outside;
@@ -57,23 +66,14 @@ ul {
   font-weight: 300;
   text-align: center;
   margin-bottom: 10px;
+  color: white;
 }
 
 h3 {
   color: #0D446C;
 }
 
-button {
-  border-radius: 1px;
-  height: 30px;
-  width: 60px;
-  border: none;
-  background-color: #ecf0f1;
-  color: #297CB9;
-  font-size: 0.9em;
-  box-shadow: 3px 3px 10px #0F4C79;
 
-}
 
 section {
   padding: 80px 0;
@@ -228,20 +228,30 @@ nav {
   overflow: hidden;
 }
 
-.service {
-  position: relative;
-  float:left;
-  width: 17.6%;
-  margin-left: 2%;
-  background-color: #297CB9;
-  vertical-align: text-top;
-  height: 250px;
+.services-wrapper > ul {
+  width: 90%;
+  max-width: 1140px;
+  list-style: none;
+  margin: 4em auto;
+  padding-left: 5%;
 }
 
-.service-h3 {
-  font-weight: 300;
-  text-align: center;
-  margin-bottom: 10px;
+.services-wrapper > ul::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.services-item {
+  width: 25%;
+  margin: 0 1.6666% 3em;
+}
+
+.service {
+  height: 270px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  padding: 10px;
 }
 
 .icon {
@@ -251,12 +261,34 @@ nav {
   background-color: #297CB9;
 }
 
-.btn {
+.service-h3 {
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.service .btn {
   position: absolute;
   margin:auto;
-  bottom: 0;
+  bottom: 10px;
   left: 50%;
   transform: translateX(-50%);
+}
+
+.service .btn button {
+  border-radius: 1px;
+  height: 30px;
+  width: 60px;
+  border: none;
+  background-color: #fff;
+  color: #0D446C;
+  font-size: 0.9em;
+  box-shadow: 3px 3px 10px #0F4C79;
+}
+
+.btn button:hover {
+  color: #fff;
+  background: #0D446C;
 }
 
 /*testimonials*/
@@ -433,6 +465,7 @@ tr td:last-child {
 .services-sidebar ul li a {
     font-weight: 400;
     color: #0D446C;
+    text-decoration: none;
 }
 
 .services-sidebar ul li a:hover {
