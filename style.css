@@ -1,14 +1,10 @@
-/*global*/
+/*GLOBAL*/
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
-/*ol, ul {
-  list-style: none;
-}*/
 
 html, body {
   /*font-family: "Roboto", "Helvetica", sans-serif;*/
@@ -18,17 +14,29 @@ html, body {
   overflow-x: hidden;
   font-weight: 300;
   line-height: 150%;
+  font-size: 16px;
 }
 
-/*reusable*/
+u {
+  text-decoration: none;
+  border-bottom: solid 1px #fff;
+  display: inline;
+  padding-bottom: 1px;
+}
 
 a {
   color: #0D446C;
-  text-decoration: underline;
+  text-decoration: none;
+  /*border-bottom: solid 1px #0D446C;*/
+  font-weight: 400;
+  /*display: inline;*/
+  font-style: italic;
+  /*padding-bottom: 1px;*/
 }
 
 a:hover {
   color: #297CB9;
+  /*border-bottom: solid 1px #297CB9;*/
 }
 
 ul {
@@ -37,10 +45,23 @@ ul {
     margin-left: 30px;
 }
 
-.services-sidebar ul {
-  list-style: none;
-  list-style-position: inside;
-  margin-left: 0;
+h3 {
+  color: #0D446C;
+}
+
+section {
+  padding: 80px 0;
+}
+
+hr {
+  border-color: #0D446C;
+}
+
+/*reusable*/
+
+h3 a {
+  font-style: normal;
+  font-weight: inherit;
 }
 
 .container {
@@ -62,33 +83,13 @@ ul {
   /*text-transform: uppercase;*/
 }
 
-.service-h3 {
-  font-weight: 300;
-  text-align: center;
-  margin-bottom: 10px;
-  color: white;
+.shadow {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 }
 
-h3 {
-  color: #0D446C;
-}
-
-
-
-section {
-  padding: 80px 0;
-}
-
-ul.nav-ul li a {
-    padding: 11px 10px 10px 10px;
-}
-
-ul.nav-ul li.active a { 
-    background-color: #868610;
-}
-
-hr {
-  border-color: #0D446C;
+.shadow:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 /*page content*/
@@ -164,7 +165,6 @@ nav {
   color: #ecf0f1;
   box-shadow: 0 10px 10px -8px #333;
   border-bottom: 1px solid #868610;
-  /*border-top: 1px solid #868610;*/
   position: relative;
   z-index: 1;
 }
@@ -179,7 +179,6 @@ nav {
 
 .main-nav ul li {
   display: inline;
-  /*padding-right: 20px;*/
 }
 
 .main-nav ul li:last-child {
@@ -189,6 +188,17 @@ nav {
 .main-nav a {
   color: #ecf0f1;
   text-decoration: none;
+  font-style: normal;
+  font-weight: inherit;
+}
+
+ul.nav-ul li a {
+    padding: 11px 10px 10px 10px;
+    border-bottom: none;
+}
+
+ul.nav-ul li.active a { 
+    background-color: #868610;
 }
 
 .hero {
@@ -222,7 +232,8 @@ nav {
 /*services-section*/
 
 .services-section {
-  color: #ecf0f1;
+  /*color: #ecf0f1;*/
+  color: #fff;
   background-color: #297CB9;
   /*fixes issue with background-color not covering the whole section*/
   overflow: hidden;
@@ -233,7 +244,6 @@ nav {
   max-width: 1140px;
   list-style: none;
   margin: 4em auto;
-  padding-left: 5%;
 }
 
 .services-wrapper > ul::after {
@@ -243,34 +253,33 @@ nav {
 }
 
 .services-item {
-  width: 25%;
-  margin: 0 1.6666% 3em;
+  width: 17%;
+  margin: 0 1.5% 3em;
 }
 
 .service {
-  height: 270px;
-  border: 1px solid #fff;
+  height: 340px;
+  background-color: #297CB9;
   border-radius: 5px;
-  padding: 10px;
+  padding: 15px;
+  text-align: center;
 }
 
 .icon {
-  text-align: center;
   padding-bottom: 20px;
   font-size: 3em;
-  background-color: #297CB9;
 }
 
 .service-h3 {
   font-weight: 300;
-  text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+  color: #fff;
 }
 
 .service .btn {
   position: absolute;
   margin:auto;
-  bottom: 10px;
+  bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -281,7 +290,7 @@ nav {
   width: 60px;
   border: none;
   background-color: #fff;
-  color: #0D446C;
+  color: #297CB9;
   font-size: 0.9em;
   box-shadow: 3px 3px 10px #0F4C79;
 }
@@ -330,13 +339,6 @@ nav {
   width: 35%;
   margin-right: 10%;
   max-width: 500px;
-}
-
-.form-contact-info strong {
-  /*color: #0D446C;*/
-  color: #bdc3c7;
-  font-weight: 300;
-  /*font-style: italic;*/
 }
 
 input, textarea, label {
@@ -453,6 +455,12 @@ tr td:last-child {
   width: 100%;
 }
 
+.services-sidebar ul {
+  list-style: none;
+  list-style-position: inside;
+  margin-left: 0;
+}
+
 .services-sidebar ul li {
     padding: 10px;
     border-bottom: 1px #297CB9 solid;
@@ -465,7 +473,8 @@ tr td:last-child {
 .services-sidebar ul li a {
     font-weight: 400;
     color: #0D446C;
-    text-decoration: none;
+    border-bottom: none;
+    font-style: normal;
 }
 
 .services-sidebar ul li a:hover {
