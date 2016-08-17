@@ -36,3 +36,60 @@
 		height: 280px;
 	}
 }
+
+ @media only screen and (max-width: 917px) {
+	.header-contact-details {
+		display: block;
+	}
+ }
+
+ @media only screen and (max-width: 819px) {
+	.service {
+		height: 300px;
+	}
+ }
+ 
+ @media only screen and (max-width: 691px) {
+	.service {
+		height: 320px;
+	}
+ }
+
+ @media only screen and (max-width: 646px) {
+	header {
+		height: 150px;
+	}
+	#logo-tagline {
+		padding: 0;
+		position: absolute;
+		top: 117px;
+		left: 10px;
+	}
+	.nav-ul {
+		font-size: 90%;
+	}
+ }
+
+@media only screen and (max-width: 605px) {
+	.services-item {
+	  	width: 45%;
+	  	margin: 0 2.5% 3em;
+	}
+	.service {
+		height: 280px;
+	}
+}
+
+@media only screen and (max-width: 514px) {
+	.contact-header {
+		font-size: .8em;
+		width: 40%;
+	}
+ }
+
+@media only screen and (max-width: 414px) {
+	.services-item {
+		width: 90%;
+		margin: 0 5% 3em;
+	}
+}

@@ -67,6 +67,7 @@ h3 a {
 .container {
   max-width: 1140px;
   margin: 0 auto;
+  position: relative;
 }
 
 .container-small {
@@ -112,7 +113,8 @@ header {
 
 #logo-tagline {
     padding: 50px 15px;
-    float: left;
+    /*float: left;*/
+    display: inline-block;
 }
 
 .logo {
@@ -132,6 +134,23 @@ header {
     width: 30%;
 }
 
+.header-contact-details {
+  display: inline-block;
+}
+
+.header-contact-details:last-child {
+  margin-left: 10px;
+}
+
+.header-contact-details i {
+  color: #868610;
+}
+
+.header-contact-details a {
+  color: #fff;
+  font-style: normal;
+}
+
 .estimate {
     margin-bottom: 10px;
     overflow: hidden;
@@ -143,13 +162,13 @@ header {
     text-align: right;
 }
 
-.contact-info span:first-child{
+/*.contact-info span:first-child{
     padding-right: 10px;
-}
+}*/
 
-.contact-info span i {
-    color: #868610;
-}
+/*.contact-info span i {
+    
+}*/
 
 span a{
     color: #ecf0f1;
