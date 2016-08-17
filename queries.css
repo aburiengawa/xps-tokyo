@@ -1,0 +1,38 @@
+@media only screen and (max-width: 1170px) {
+  	.logo {
+		margin-left: 10px;  	
+  	}
+  	.contact-header {
+  		margin-right: 10px;
+  	}
+}
+
+@media only screen and (max-width: 1080px) {
+	.service-h3 {
+  		font-size: 110%;
+  	}
+}
+
+@media only screen and (max-width: 1024px) {
+  	.contact-header {
+  		font-size: .9em;
+  	}
+   	.service p {
+	  	font-size: .9em;
+	  	line-height: 140%;
+ 	}
+  	.service-h3 {
+  		font-size: 105%;
+ 	}
+  
+}
+
+ @media only screen and (max-width: 980px) {
+	.services-item {
+	  	width: 30%;
+	  	margin: 0 1.6666% 3em;
+	}
+	.service {
+		height: 280px;
+	}
+}
