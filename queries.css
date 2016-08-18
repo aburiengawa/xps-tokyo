@@ -13,6 +13,12 @@
   	}
 }
 
+@media only screen and (max-width: 1169px) {
+	.cd-testimonials-wrapper {
+		height: 350px;
+	}
+}
+
 @media only screen and (max-width: 1024px) {
   	.contact-header {
   		font-size: .9em;
@@ -24,10 +30,18 @@
   	.service-h3 {
   		font-size: 105%;
  	}
-  
 }
 
- @media only screen and (max-width: 980px) {
+@media only screen and (max-width: 999px) {
+	.container-small {
+		max-width: 1000px;
+	  	margin: 0 auto;
+	  	padding-left: 20px; 
+	  	padding-right: 20px;
+	}
+}
+
+@media only screen and (max-width: 980px) {
 	.services-item {
 	  	width: 30%;
 	  	margin: 0 1.6666% 3em;
@@ -37,25 +51,63 @@
 	}
 }
 
- @media only screen and (max-width: 917px) {
+@media only screen and (max-width: 959px) {
+	.services-sidebar {
+		font-size: 90%;
+	}
+}
+
+@media only screen and (max-width: 917px) {
 	.header-contact-details {
 		display: block;
 	}
  }
 
- @media only screen and (max-width: 819px) {
+@media only screen and (max-width: 832px) {
+	.services-sidebar {
+		font-size: 80%;
+	}
+}
+
+@media only screen and (max-width: 819px) {
 	.service {
 		height: 300px;
 	}
  }
+
+@media only screen and (max-width: 767px) {
+	.cd-testimonials-wrapper {
+		height: 230px;
+	}
+	.form-contact-info {
+		float: none;
+		margin-top: 20px;
+		width: 50%;
+		margin-left: 25%;
+	}
+	.form {
+		  height: 290px;
+		  width: 50%;
+		  margin-left: 25%;
+	}
+	.services-sidebar, .service-content {
+		float: none;
+		width: 100%;
+	}
+	.services-sidebar ul li {
+		display: inline;
+		font-size: 110%;
+		border: none;
+	}
+}
  
- @media only screen and (max-width: 691px) {
+@media only screen and (max-width: 691px) {
 	.service {
 		height: 320px;
 	}
  }
 
- @media only screen and (max-width: 646px) {
+@media only screen and (max-width: 652px) {
 	header {
 		height: 150px;
 	}
@@ -68,7 +120,27 @@
 	.nav-ul {
 		font-size: 90%;
 	}
- }
+}
+
+@media only screen and (max-width: 620px) {
+	.cd-testimonials-wrapper {
+		height: 250px;
+	}
+	.form-contact-info {
+		float: none;
+		margin-top: 20px;
+		width: 70%;
+		margin-left: 15%;
+	}
+	.form {
+		  height: 290px;
+		  width: 70%;
+		  margin-left: 15%;
+	}
+	.services-sidebar ul li a {
+		font-size: 90%;
+	}
+}
 
 @media only screen and (max-width: 605px) {
 	.services-item {
@@ -77,6 +149,38 @@
 	}
 	.service {
 		height: 280px;
+	}
+}
+
+@media only screen and (max-width: 520px) {
+	.cd-testimonials-wrapper {
+		height: 270px;
+	}
+}
+
+@media only screen and (max-width: 450px) {
+	.cd-testimonials-wrapper {
+		height: 300px;
+	}
+}
+
+@media only screen and (max-width: 418px) {
+	.cd-testimonials-wrapper {
+		height: 320px;
+	}
+	.form-contact-info {
+		float: none;
+		margin-top: 20px;
+		width: 80%;
+		margin-left: 10%;
+	}
+	.form {
+		  height: 290px;
+		  width: 80%;
+		  margin-left: 10%;
+	}
+	.title {
+		font-size: 120%;
 	}
 }
 
@@ -93,3 +197,9 @@
 		margin: 0 5% 3em;
 	}
 }
+
+
+
+
+
+
