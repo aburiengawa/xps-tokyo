@@ -17,6 +17,7 @@
 .cd-testimonials-wrapper::after {
   /* quotation mark */
   content: '\201C';
+  line-height: 100%;
   position: absolute;
   top: 10px;
   left: 0;

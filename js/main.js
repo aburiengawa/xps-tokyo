@@ -39,4 +39,50 @@ jQuery(document).ready(function($){
 	$('.services-wrapper').children('ul').masonry({
   		itemSelector: '.services-item'
 	});
+
+	/* mobile navigation - hamburger */
+    var nav = $('.nav-ul');
+    var icon = $('.js--nav-icon i');
+    
+    $('.js--nav-icon').click(function(){
+        nav.slideToggle(200);
+        switchMobileIcon(icon);
+    });
+    
+    //hides links on stick nav after clicking a link
+    // $('.js--main-nav a').click(function(){
+    //     if ($(window).width() < 600){
+    //         nav.slideToggle(200);
+    //     }
+    //     switchMobileIcon(icon);
+    // });
+    
+    //brings back desktop nav when resized back
+    // $(window).resize(function(){
+    //     if ($(window).width() > 599){
+    //         nav.css("display", "block");
+    //         switchToClose(icon);
+    //     } else {
+    //         nav.css("display", "none");
+    //         switchToNavicon(icon);
+    //     }
+    // });
 });
+
+function switchMobileIcon (icon) {
+    if (icon.hasClass('fa-bars')) {
+        switchToClose(icon);
+    } else {
+        switchToNavicon(icon);
+    }
+}
+
+function switchToClose (icon) {  
+    icon.addClass('fa-times-circle-o');
+    icon.removeClass('fa-bars');   
+}
+
+function switchToNavicon (icon) {  
+    icon.addClass('fa-bars');
+    icon.removeClass('fa-times-circle-o');  
+}

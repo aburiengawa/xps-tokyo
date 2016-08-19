@@ -61,7 +61,7 @@
 	.header-contact-details {
 		display: block;
 	}
- }
+}
 
 @media only screen and (max-width: 832px) {
 	.services-sidebar {
@@ -73,7 +73,7 @@
 	.service {
 		height: 300px;
 	}
- }
+}
 
 @media only screen and (max-width: 767px) {
 	.cd-testimonials-wrapper {
@@ -92,12 +92,17 @@
 	}
 	.services-sidebar, .service-content {
 		float: none;
+	}	
+	.services-sidebar {
+		width: 225px;
+	}
+	.service-content {
 		width: 100%;
 	}
 	.services-sidebar ul li {
-		display: inline;
+		/*display: inline;*/
 		font-size: 110%;
-		border: none;
+		/*border: none;*/
 	}
 }
  
@@ -120,6 +125,11 @@
 	.nav-ul {
 		font-size: 90%;
 	}
+
+	ul.nav-ul li a {
+    	padding: 11px 10px 14px 10px;
+    	border-bottom: none;
+	}
 }
 
 @media only screen and (max-width: 620px) {
@@ -137,9 +147,6 @@
 		  width: 70%;
 		  margin-left: 15%;
 	}
-	.services-sidebar ul li a {
-		font-size: 90%;
-	}
 }
 
 @media only screen and (max-width: 605px) {
@@ -149,6 +156,31 @@
 	}
 	.service {
 		height: 280px;
+	}
+}
+
+@media only screen and (max-width: 599px) {
+/*	.nav-ul {
+		display: none;
+		float: left;
+	}*/
+	.nav-ul { 
+		text-align: left; 
+		display: none;
+	}
+	.main-nav ul li {
+ 		display: block;
+	}
+	.main-nav ul {
+		float: left;
+	}
+	.fa-bars, .fa-times-circle-o {
+		float: right;
+		display: inline;
+		font-size: 1.5em;
+	}
+	ul.nav-ul li.active a { 
+    	background-color: transparent;
 	}
 }
 
