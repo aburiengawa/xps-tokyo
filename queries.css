@@ -174,7 +174,7 @@
 	.main-nav ul {
 		float: left;
 	}
-	.fa-bars, .fa-times-circle-o {
+	.fa-bars, .fa-times {
 		float: right;
 		display: inline;
 		font-size: 1.5em;

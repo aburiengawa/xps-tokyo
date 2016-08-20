@@ -58,15 +58,15 @@ jQuery(document).ready(function($){
     // });
     
     //brings back desktop nav when resized back
-    // $(window).resize(function(){
-    //     if ($(window).width() > 599){
-    //         nav.css("display", "block");
-    //         switchToClose(icon);
-    //     } else {
-    //         nav.css("display", "none");
-    //         switchToNavicon(icon);
-    //     }
-    // });
+    $(window).resize(function(){
+        if ($(window).width() > 599){
+            nav.css("display", "block");
+        //     switchToClose(icon);
+        } else {
+            nav.css("display", "none");
+            switchToNavicon(icon);
+        }
+    });
 });
 
 function switchMobileIcon (icon) {
@@ -78,11 +78,11 @@ function switchMobileIcon (icon) {
 }
 
 function switchToClose (icon) {  
-    icon.addClass('fa-times-circle-o');
+    icon.addClass('fa-times');
     icon.removeClass('fa-bars');   
 }
 
 function switchToNavicon (icon) {  
     icon.addClass('fa-bars');
-    icon.removeClass('fa-times-circle-o');  
+    icon.removeClass('fa-times');  
 }
