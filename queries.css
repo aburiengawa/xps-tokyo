@@ -3,7 +3,7 @@
 		margin-left: 10px;  	
   	}
   	.contact-header {
-  		margin-right: 10px;
+  		margin-right: 20px;
   	}
 }
 
@@ -75,6 +75,7 @@
 	}
 }
 
+/*iPad minus 1px*/
 @media only screen and (max-width: 767px) {
 	.cd-testimonials-wrapper {
 		height: 230px;
@@ -110,7 +111,13 @@
 	.service {
 		height: 320px;
 	}
- }
+}
+
+@media only screen and (max-width: 661px) {
+	#logo-tagline {
+		font-size: 98%;
+	}
+}
 
 @media only screen and (max-width: 652px) {
 	header {
@@ -159,6 +166,7 @@
 	}
 }
 
+/*Nexus 7 minus 1px*/
 @media only screen and (max-width: 599px) {
 /*	.nav-ul {
 		display: none;
@@ -223,10 +231,28 @@
 	}
  }
 
+/*iPhone 6 Plus*/
 @media only screen and (max-width: 414px) {
 	.services-item {
 		width: 90%;
 		margin: 0 5% 3em;
+	}
+}
+
+/*iPhone 5*/
+@media only screen and (max-width: 320px) {
+	header {
+		height: 150px;
+	}
+	.contact-header {
+		width: 45%;
+	}
+	#logo-tagline {
+		top: 117px;
+		left: 20px;
+	}
+	.cd-testimonials-wrapper {
+		height: 380px;
 	}
 }
 
