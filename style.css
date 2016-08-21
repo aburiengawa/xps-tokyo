@@ -226,7 +226,7 @@ ul.nav-ul li.active a {
 .hero {
   background-image: url(bg-img1.jpg);
   background-size: cover;
-  position: relative;
+  /*position: relative;*/
   height: 400px;
   width: 100%;
   /*overflow: hidden;*/
