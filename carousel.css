@@ -73,6 +73,7 @@
   line-height: 1.4;
   margin-bottom: 1em;
   padding: 0 14px;
+  letter-spacing: -1px;
 }
 @media only screen and (min-width: 768px) {
   .cd-testimonials p {
@@ -84,7 +85,7 @@
   .cd-testimonials p {
     font-size: 26px;
     font-size: 1.625rem;
-    line-height: 1.6;
+    line-height: 1.5;
   }
 }
 

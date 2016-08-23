@@ -7,6 +7,18 @@
   	}
 }
 
+@media only screen and (max-width: 1169px) {
+	.cd-testimonials-wrapper {
+		height: 350px;
+	}
+}
+
+@media only screen and (max-width: 1164px) {
+	.service {
+		height: 360px;
+	}
+}
+
 @media only screen and (max-width: 1080px) {
 	.service-h3 {
   		font-size: 110%;
@@ -192,9 +204,28 @@
 	}
 }
 
+@media only screen and (max-width: 546px) {
+	.service {
+		height: 300px;
+	}
+}
+
 @media only screen and (max-width: 520px) {
 	.cd-testimonials-wrapper {
 		height: 270px;
+	}
+}
+
+@media only screen and (max-width: 514px) {
+	.contact-header {
+		font-size: .8em;
+		width: 40%;
+	}
+ }
+
+@media only screen and (max-width: 460px) {
+	.service {
+		height: 320px;
 	}
 }
 
@@ -224,18 +255,14 @@
 	}
 }
 
-@media only screen and (max-width: 514px) {
-	.contact-header {
-		font-size: .8em;
-		width: 40%;
-	}
- }
-
 /*iPhone 6 Plus*/
 @media only screen and (max-width: 414px) {
 	.services-item {
 		width: 90%;
 		margin: 0 5% 3em;
+	}
+	.service {
+		height: 260px;
 	}
 }
 

@@ -15,6 +15,7 @@ html, body {
   font-weight: 300;
   line-height: 150%;
   font-size: 16px;
+  color: #fff;
 }
 
 u {
@@ -108,7 +109,7 @@ header {
   background: #0D446C;
 
   height: 120px;
-  color: #ecf0f1;
+  /*color: #ecf0f1;*/
   /*overflow: auto;*/
 }
 
@@ -172,9 +173,9 @@ header {
     
 }*/
 
-span a{
+/*span a{
     color: #ecf0f1;
-}
+}*/
 
 /*menus*/
 nav {
@@ -183,7 +184,7 @@ nav {
   background: #0F4C79;
   padding: 10px;
   padding-top: 8px;
-  color: #ecf0f1;
+  /*color: #ecf0f1;*/
   box-shadow: 0 10px 10px -8px #333;
   overflow: hidden;
   position: relative;
@@ -331,7 +332,8 @@ ul.nav-ul li.active a {
 /*testimonials*/
 
 .testimonials {
-  background-color: #ecf0f1;
+  /*background-color: #ecf0f1;*/
+  background-color: #fff;
 }
 
 .testimonials h1 {
